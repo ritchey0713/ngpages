@@ -36,4 +36,11 @@ export class AppComponent {
     const paginateValue = parseInt(value)
     this.currentPage = paginateValue;
   }
+
+  onClickPrev = () => {
+    console.log(this.currentPage > 0)
+    if(this.currentPage > 0){
+      this.currentPage -= 1
+    }
+  }
 }

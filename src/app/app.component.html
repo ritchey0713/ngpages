@@ -3,7 +3,9 @@
     <li class="page-item"
     [ngClass]="{disabled: currentPage === 0}"
     >
-      <a class="page-link">Prev</a>
+      <a class="page-link"
+        (click)="onClickPrev()"
+      >Prev</a>
     </li>
     <li class="page-item"
     [ngClass]="{ active: i === currentPage }"
