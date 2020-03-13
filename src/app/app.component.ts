@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pages';
+  currentPage = 0;
 
   images = [
     {
@@ -28,6 +29,6 @@ export class AppComponent {
     {
       title: "youtuber",
       url: 'https://images.unsplash.com/photo-1561883088-039e53143d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
-    },
+    }
   ]
 }
