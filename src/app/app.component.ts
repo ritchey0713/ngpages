@@ -38,9 +38,14 @@ export class AppComponent {
   }
 
   onClickPrev = () => {
-    console.log(this.currentPage > 0)
     if(this.currentPage > 0){
       this.currentPage -= 1
+    }
+  }
+
+  onClickNext = () => {
+    if (this.currentPage < this.images.length){
+      this.currentPage += 1
     }
   }
 }
