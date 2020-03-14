@@ -1,6 +1,7 @@
 <nav>
   <ul class="pagination">
     <li class="page-item"
+      appClass
       [ngClass]="{disabled: currentPage === 0}"
     >
       <a class="page-link"
@@ -32,3 +33,17 @@
   <h4>{{ images[currentPage].title }}</h4>
   <img [src]="images[currentPage].url">
 </div>
+
+<!-- <div [ngSwitch]="currentPage">
+  <div *ngSwitchCase="0">
+    current page is 0
+  </div>
+
+  <div *ngSwitchCase="2">
+    current page is 2
+  </div>
+
+  <div *ngSwitchDefault>
+    default!!
+  </div>
+</div> -->
